@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 
 $app_id = 'c9-test-1wvq8n7g';
 $id_product = '157782';
-$app_redirect = 'https://php-react-env-api-digitalzoomstudio-1.c9users.io/api.php';
+$app_redirect = 'https://php-env-support.herokuapp.com/api.php';
 $app_token = "16NE5cs5MFUx09VcdglIvqN6cECHfKBZ";
 $personal_api_key = '0d47jgbwur8wulhynwwbatb0giz9i66j';
 
@@ -129,16 +129,16 @@ try {
     $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=2&sort_by=newest' );
 
     // echo '<pre>';
-    
+
     if(isset($comments->Message)){
     $message = $comments->Message;
     }
-    
+
     if(isset($comments->Message) && strpos($message,'User is not authorized')!==false){
-      
+
     echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
     }else{
-      
+
       echo json_encode( $comments );
     }
     // print_rr($comments->Message);
@@ -148,4 +148,4 @@ try {
 } catch( \ErrorException $e ) {
     echo $e->getMessage();
 }
-           
+
