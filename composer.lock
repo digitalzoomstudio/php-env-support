@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "36df941d786bb7f1d2955ed742ef6ca0",
+    "packages": [
+        {
+            "name": "smafe/envato-api",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smafe-com/envato-api-library.git",
+                "reference": "ff993436f6a19e133788a5f77933a5e0041a81cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smafe-com/envato-api-library/zipball/ff993436f6a19e133788a5f77933a5e0041a81cb",
+                "reference": "ff993436f6a19e133788a5f77933a5e0041a81cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Class/Envato/Envato.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Smafe Web Solutions",
+                    "email": "h@smafe.com"
+                }
+            ],
+            "description": "PHP library to communicate with the Envato API.",
+            "time": "2018-03-16T17:07:32+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
