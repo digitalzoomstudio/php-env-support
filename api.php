@@ -49,6 +49,14 @@ $envato = new \Smafe\Envato( array(
 
 // echo $file_cont;
 
+if(isset($_GET['real']) && $_GET['real']=='on'){
+
+}else{
+    $cont = file_get_contents($id_product.'.txt',true);
+
+    echo $cont;
+}
+
 
 if( isset( $_SESSION['envato_token'] ) ){
     $envato->setAccessToken( $_SESSION['envato_token'] );
