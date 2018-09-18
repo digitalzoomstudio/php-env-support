@@ -55,6 +55,8 @@ if(isset($_GET['real']) && $_GET['real']=='on'){
     $cont = file_get_contents($id_product.'.txt',true);
 
     echo $cont;
+
+    die();
 }
 
 

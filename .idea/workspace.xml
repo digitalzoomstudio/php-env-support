@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9431f307-d3cf-455b-95b4-a9962e4e5337" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/157782.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6181433.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/157782.txt" beforeDir="false" afterPath="$PROJECT_DIR$/157782.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6181433.txt" beforeDir="false" afterPath="$PROJECT_DIR$/6181433.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +20,10 @@
     <session id="-586881585">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,25 +40,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="103" />
-          <entry key="txt" value="10" />
+          <entry key="php" value="114" />
+          <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="103" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PHP" value="114" />
+          <entry key="PLAIN_TEXT" value="25" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="283">
+              <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -66,17 +66,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/157782.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
+            <state relative-caret-position="85">
               <caret column="5774" selection-start-column="5774" selection-end-column="5774" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6181433.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2329">
-              <caret column="1453" lean-forward="true" selection-start-column="1453" selection-end-column="1453" />
+            <state relative-caret-position="17">
+              <caret column="1453" selection-start-column="1453" selection-end-column="1453" />
             </state>
           </provider>
         </entry>
@@ -86,10 +86,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>envato</find>
+      <find>wordpress</find>
     </findStrings>
     <replaceStrings>
       <replace>the item name !!!</replace>
       <replace>evil213</replace>
+      <replace>nodejs</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,9 +102,9 @@
       <list>
         <option value="$PROJECT_DIR$/vg.txt" />
         <option value="$PROJECT_DIR$/zs.txt" />
-        <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/157782.txt" />
         <option value="$PROJECT_DIR$/6181433.txt" />
+        <option value="$PROJECT_DIR$/api.php" />
       </list>
     </option>
   </component>
@@ -137,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,18 +183,27 @@
       <option name="presentableId" value="Default" />
       <updated>1537188223457</updated>
       <workItem from="1537188224837" duration="464000" />
-      <workItem from="1537259223324" duration="321000" />
+      <workItem from="1537259223324" duration="443000" />
+      <workItem from="1537259748647" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="added unreal">
+      <created>1537259606600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537259606601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="785000" />
+    <option name="totallyTimeSpent" value="919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="305" y="69" width="1208" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19076654" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19425087" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -205,8 +216,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3222749" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3222749" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32938388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -220,25 +232,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added unreal" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unreal" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="283">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/157782.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
+        <state relative-caret-position="85">
           <caret column="5774" selection-start-column="5774" selection-end-column="5774" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6181433.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2329">
-          <caret column="1453" lean-forward="true" selection-start-column="1453" selection-end-column="1453" />
+        <state relative-caret-position="17">
+          <caret column="1453" selection-start-column="1453" selection-end-column="1453" />
         </state>
       </provider>
     </entry>
