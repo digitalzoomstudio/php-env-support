@@ -149,6 +149,16 @@ try {
     echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
     }else{
 
+        // -- return comments
+
+
+        foreach ($comments->matches->conversation as $lab=>$val){
+        }
+        $comments->matches->subtickets = $comments->matches->conversation;
+
+        $comments->tickets = $comments->matches;
+
+
       echo json_encode( $comments );
     }
     // print_rr($comments->Message);
