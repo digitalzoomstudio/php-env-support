@@ -49,7 +49,7 @@ $envato = new \Smafe\Envato( array(
 
 // echo $file_cont;
 
-if(isset($_GET['real']) && $_GET['real']=='on'){
+if( (isset($_GET['real']) && $_GET['real']=='on') || isset($_GET['code'])){
 
 }else{
     $cont = file_get_contents($id_product.'.txt',true);
