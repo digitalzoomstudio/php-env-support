@@ -130,44 +130,56 @@ if( isset( $_GET['exit'] ) ) {
 
 
 
+$request = 'comments';
 
 
-try {
+if(isset($_GET['request']) && $_GET['request']){
 
-  $logged = $envato->validToken();
-  // print_r( $logged );
-
-} catch( \ErrorException $e ) {
-
-
-  try {
-
-    $code = $envato->getAccessToken( $_GET['code'],'REFRESH' );
-    // print_r( $code );
-
-  } catch( \ErrorException $e2 ) {
-
-    // echo $e->getMessage();
-
-  }
+  $request = $_GET['request'];
+}
 
 
 
+if($request!='version'){
 
   try {
 
     $logged = $envato->validToken();
     // print_r( $logged );
 
-  } catch( \ErrorException $e2 ) {
+  } catch( \ErrorException $e ) {
 
-    echo 'User is not logged in. Failed with error: ' . $e->getMessage();
-    // Don't need to echo error here. If $logged is defined, i means the access is granted.
+
+    try {
+
+      $code = $envato->getAccessToken( $_GET['code'],'REFRESH' );
+      // print_r( $code );
+
+    } catch( \ErrorException $e2 ) {
+
+      // echo $e->getMessage();
+
+    }
+
+
+
+
+    try {
+
+      $logged = $envato->validToken();
+      // print_r( $logged );
+
+    } catch( \ErrorException $e2 ) {
+
+      echo 'User is not logged in. Failed with error: ' . $e->getMessage();
+      // Don't need to echo error here. If $logged is defined, i means the access is granted.
+
+    }
+
 
   }
-
-
 }
+
 
 if( isset( $logged ) ){
 
@@ -191,34 +203,58 @@ if( !isset( $logged ) ){
 
 
 
-
-
 try {
-  $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=2&sort_by=newest' );
+
+  switch ($request){
+    case "version":
+      $version = $envato->request( 'v3/market/catalog/item-version?id='.$id_product );
+
+      break;
+    case "comments":
+
+      $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=3&sort_by=newest' );
+
+      if(isset($comments->Message)){
+        $message = $comments->Message;
+      }
+
+      if(isset($comments->Message) && strpos($message,'User is not authorized')!==false){
+
+        echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
+      }else{
+
+        // -- return comments
+
+
+        foreach ($comments->matches->conversation as $lab=>$val){
+        }
+        $comments->matches->subtickets = $comments->matches->conversation;
+
+        $comments->tickets = $comments->matches;
+
+
+        echo json_encode( $comments );
+      }
+
+      break;
+
+    default:
+      break;
+  }
+
+  $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=3&sort_by=newest' );
+
+  if($request=='version'){
+
+  }
+  if($request=='comments'){
+
+  }
 
   // echo '<pre>';
 
-  if(isset($comments->Message)){
-    $message = $comments->Message;
-  }
-
-  if(isset($comments->Message) && strpos($message,'User is not authorized')!==false){
-
-    echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
-  }else{
-
-    // -- return comments
 
 
-    foreach ($comments->matches->conversation as $lab=>$val){
-    }
-    $comments->matches->subtickets = $comments->matches->conversation;
-
-    $comments->tickets = $comments->matches;
-
-
-    echo json_encode( $comments );
-  }
   // print_rr($comments->Message);
   // print_rr( $comments );
   // echo '</pre>';
