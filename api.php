@@ -13,6 +13,8 @@ $personal_api_key = '0d47jgbwur8wulhynwwbatb0giz9i66j';
 
 
 
+$code = '';
+
 if(isset($_GET['id_product'])){
   $id_product = $_GET['id_product'];
 }
@@ -49,6 +51,8 @@ $envato = new \Smafe\Envato( array(
 
 // echo $file_cont;
 
+
+// -- start fake
 if(  (isset($_GET['fake']) && $_GET['fake']=='on') && isset($_GET['code'])==false  ) {
 
   $cont = file_get_contents($id_product.'.txt',true);
@@ -58,9 +62,45 @@ if(  (isset($_GET['fake']) && $_GET['fake']=='on') && isset($_GET['code'])==fals
   die();
 }else{
 }
+// -- end fake
+
+
+
+
+
+
+$code = '';
+
+if( isset( $_GET['code'] ) ) {
+
+  $code = $_GET['code'];
+  try {
+
+    $code = $envato->getAccessToken( $_GET['code'] );
+    // print_r( $code );
+
+  } catch( \ErrorException $e ) {
+
+    // echo $e->getMessage();
+
+  }
+
+
+  $myfile = fopen("lastcode.txt", "w") or die("Unable to open file!");
+  ;
+  fwrite($myfile, $code);
+  fclose($myfile);
+
+}else{
+
+  $code = file_get_contents('lastcode.txt');
+}
+
+
 
 $token = '';
 if( isset( $_SESSION['envato_token'] ) ){
+  // -- if we have token
   $token = $_SESSION['envato_token'];
   $envato->setAccessToken( $_SESSION['envato_token'] );
 
@@ -88,20 +128,6 @@ if( isset( $_GET['exit'] ) ) {
 }
 
 
-if( isset( $_GET['code'] ) ) {
-
-  try {
-
-    $code = $envato->getAccessToken( $_GET['code'] );
-    // print_r( $code );
-
-  } catch( \ErrorException $e ) {
-
-    // echo $e->getMessage();
-
-  }
-
-}
 
 
 
