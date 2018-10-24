@@ -6,7 +6,8 @@ $app_id = 'c9-test-1wvq8n7g';
 
 $id_product = '157782';
 $app_redirect = 'https://php-react-env-api-digitalzoomstudio-1.c9users.io/';
-$app_redirect = 'https://php-env-support.herokuapp.com/';
+$app_redirect = 'https://php-env-support.herokuapp.com/api.php';
+//$app_redirect = 'https://php-env-support.herokuapp.com/api.php';
 $app_token = "16NE5cs5MFUx09VcdglIvqN6cECHfKBZ";
 $personal_api_key = '0d47jgbwur8wulhynwwbatb0giz9i66j';
 
