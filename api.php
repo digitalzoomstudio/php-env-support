@@ -1,8 +1,8 @@
 <?php
 
-error_reporting(E_ALL);
+error_reporting(E_ERROR);
 ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
+//ini_set('display_errors', 1);
 
 
 $app_id = 'c9-test-1wvq8n7g';
@@ -49,7 +49,7 @@ $envato = new \Smafe\Envato( array(
 
 // echo $file_cont;
 
-if( (isset($_GET['real']) && $_GET['real']=='on') || isset($_GET['code'])){
+if(  !(isset($_GET['fake']) && $_GET['fake']=='on') &&(isset($_GET['real']) && $_GET['real']=='on') || isset($_GET['code'])){
 
 }else{
     $cont = file_get_contents($id_product.'.txt',true);
