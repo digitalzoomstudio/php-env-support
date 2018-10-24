@@ -49,18 +49,19 @@ $envato = new \Smafe\Envato( array(
 
 // echo $file_cont;
 
-if(  !(isset($_GET['fake']) && $_GET['fake']=='on') &&(isset($_GET['real']) && $_GET['real']=='on') || isset($_GET['code'])){
+if(  (isset($_GET['fake']) && $_GET['fake']=='on') && isset($_GET['code'])==false  ) {
 
+  $cont = file_get_contents($id_product.'.txt',true);
+
+  echo $cont;
+
+  die();
 }else{
-    $cont = file_get_contents($id_product.'.txt',true);
-
-    echo $cont;
-
-    die();
 }
 
-
+$token = '';
 if( isset( $_SESSION['envato_token'] ) ){
+  $token = $_SESSION['envato_token'];
     $envato->setAccessToken( $_SESSION['envato_token'] );
 
 
@@ -73,6 +74,7 @@ if( isset( $_SESSION['envato_token'] ) ){
 }else{
 
     $file_cont = file_get_contents('lasttoken.txt');
+  $token = $file_cont;
     $envato->setAccessToken($file_cont );
 }
 
@@ -135,6 +137,11 @@ if( !isset( $logged ) ){
 
 
 //echo 'ceeva';
+
+
+
+
+
 try {
     $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=2&sort_by=newest' );
 
