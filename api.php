@@ -152,7 +152,7 @@ if($request!='version'){
 
     try {
 
-      $code = $envato->getAccessToken( $_GET['code'],'REFRESH' );
+      $code = $envato->getAccessToken( $code,'REFRESH' );
       // print_r( $code );
 
     } catch( \ErrorException $e2 ) {
@@ -207,7 +207,8 @@ try {
 
   switch ($request){
     case "version":
-      $version = $envato->request( 'v3/market/catalog/item-version?id='.$id_product );
+      $resp = $envato->request( 'v3/market/catalog/item-version?id='.$id_product );
+      echo json_encode( $resp );
 
       break;
     case "comments":
