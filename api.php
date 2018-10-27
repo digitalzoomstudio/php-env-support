@@ -70,7 +70,12 @@ $envato = new \Smafe\Envato( array(
 // -- start fake
 if(  (isset($_GET['fake']) && $_GET['fake']=='on') && isset($_GET['code'])==false  ) {
 
-  $cont = file_get_contents($id_product.'.txt',true);
+  $path = $id_product.'.txt';
+
+  if(file_exists($path)){
+
+    $cont = file_get_contents($path,true);
+  }
 
   echo $cont;
 
@@ -106,7 +111,13 @@ if( isset( $_GET['code'] ) ) {
 
 }else{
 
-  $code = file_get_contents('lastcode.txt');
+  $path = 'lastcode.txt';
+
+  if(file_exists($path)) {
+
+    $code = file_get_contents($path);
+
+  }
 }
 
 
@@ -126,7 +137,14 @@ if( isset( $_SESSION['envato_token'] ) ){
 
 }else{
 
-  $file_cont = file_get_contents('lasttoken.txt');
+
+  $path = 'lasttoken.txt';
+
+  if(file_exists($path)) {
+
+    $file_cont = file_get_contents($path);
+
+  }
   $token = $file_cont;
   $envato->setAccessToken($file_cont );
 }
