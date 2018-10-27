@@ -20,6 +20,19 @@ if(isset($_GET['id_product'])){
 }
 
 
+function write_file($filename,$content){
+
+  $myfile = fopen($filename, "w") or die("Unable to open file!");
+  ;
+  fwrite($myfile, $content);
+  fclose($myfile);
+}
+function sanitize_for_filename($arg){
+  $arg = preg_replace("[^\w\s\d\.\-_~,;:\[\]\(\]]", '', $arg);
+
+  return $arg;
+}
+
 if(function_exists('print_rr')==false){
   function print_rr($arg){
     $fout = '';
@@ -86,10 +99,8 @@ if( isset( $_GET['code'] ) ) {
   }
 
 
-  $myfile = fopen("lastcode.txt", "w") or die("Unable to open file!");
-  ;
-  fwrite($myfile, $code);
-  fclose($myfile);
+  write_file("lastcode.txt",$code);
+
 
 }else{
 
@@ -136,6 +147,14 @@ $request = 'comments';
 if(isset($_GET['request']) && $_GET['request']){
 
   $request = $_GET['request'];
+}
+
+
+if(isset($_GET['action']) && $_GET['action']=='show_files'){
+
+  $dir    = '/tmp';
+  $files1 = scandir($dir);
+  print_rr($files1);
 }
 
 
@@ -207,8 +226,21 @@ try {
 
   switch ($request){
     case "version":
-      $resp = $envato->request( 'v3/market/catalog/item-version?id='.$id_product );
-      echo json_encode( $resp );
+
+      $req = 'v3/market/catalog/item-version?id='.$id_product;
+      $resp = $envato->request( $req );
+
+      if($resp->Message=='User is not authorized to access this resource with an explicit deny'){
+
+        echo 'User is not logged in * unauthorized. Failed with error: ' . $e->getMessage();
+      }else{
+        echo json_encode( $resp );
+
+
+
+        write_file($req,json_encode( $resp ));
+
+      }
 
       break;
     case "comments":
