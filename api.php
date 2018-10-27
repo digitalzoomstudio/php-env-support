@@ -24,10 +24,15 @@ if(isset($_GET['id_product'])){
 
 function write_file($filename,$content){
 
-  $myfile = fopen($filename, "w") or die("Unable to open file!");
-  ;
-  fwrite($myfile, $content);
-  fclose($myfile);
+  try{
+
+    $myfile = @fopen($filename, "w");
+    ;
+    fwrite($myfile, $content);
+    fclose($myfile);
+  }catch(Exception $e){
+    // np
+  }
 }
 function sanitize_for_filename($arg){
   $arg = preg_replace("[^\w\s\d\.\-_~,;:\[\]\(\]]", '', $arg);
