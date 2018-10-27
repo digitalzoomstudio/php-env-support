@@ -255,8 +255,8 @@ try {
 
       if(isset($resp->Message) && $resp->Message=='User is not authorized to access this resource with an explicit deny'){
 
-        echo 'User is not logged in * unauthorized. Failed with error: ' . $e->getMessage();
-        echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
+//        echo 'User is not logged in * unauthorized. Failed with error: ' . $e->getMessage();
+        echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger"> User is not authorized to access this resource with an explicit deny . Login to your Env account</a>';
       }else{
         echo json_encode( $resp );
 
