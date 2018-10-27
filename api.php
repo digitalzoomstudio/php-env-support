@@ -197,6 +197,7 @@ if($request!='version'){
     } catch( \ErrorException $e2 ) {
 
       // echo $e->getMessage();
+      echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
 
     }
 
@@ -210,7 +211,9 @@ if($request!='version'){
 
     } catch( \ErrorException $e2 ) {
 
-      echo 'User is not logged in. Failed with error: ' . $e->getMessage();
+      echo 'User is not logged in. Failed with error: ' . $e2->getMessage();
+      echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
+
       // Don't need to echo error here. If $logged is defined, i means the access is granted.
 
     }
@@ -253,6 +256,7 @@ try {
       if(isset($resp->Message) && $resp->Message=='User is not authorized to access this resource with an explicit deny'){
 
         echo 'User is not logged in * unauthorized. Failed with error: ' . $e->getMessage();
+        echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
       }else{
         echo json_encode( $resp );
 
@@ -314,5 +318,6 @@ try {
 
 } catch( \ErrorException $e ) {
   echo $e->getMessage();
+  echo '<a href="' . $envato->getAuthUrl() . '" class="btn btn-danger">Login to your Env account</a>';
 }
 
