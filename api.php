@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_startup_errors', 1);
 ini_set("log_errors", 1);
-ini_set("error_log", "./php-error.log");
+ini_set("error_log", "php-error.log");
 ini_set('display_errors', 0);
 
 
@@ -232,7 +232,7 @@ try {
       $req = 'v3/market/catalog/item-version?id='.$id_product;
       $resp = $envato->request( $req );
 
-      if($resp->Message=='User is not authorized to access this resource with an explicit deny'){
+      if(isset($resp->Message) && $resp->Message=='User is not authorized to access this resource with an explicit deny'){
 
         echo 'User is not logged in * unauthorized. Failed with error: ' . $e->getMessage();
       }else{
