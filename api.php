@@ -127,32 +127,35 @@ if( isset( $_GET['code'] ) ) {
 
 
 
-$token = '';
-if( isset( $_SESSION['envato_token'] ) ){
-  // -- if we have token
-  $token = $_SESSION['envato_token'];
-  $envato->setAccessToken( $_SESSION['envato_token'] );
+$token = '5P54YZY1rktnHXldB3xXS8YJgd0SIAEE';
+$envato->setAccessToken( $token );
 
 
-  $myfile = fopen("lasttoken.txt", "w") or die("Unable to open file!");
-  $txt = $_SESSION['envato_token'];
-  fwrite($myfile, $txt);
-  fclose($myfile);
-
-
-}else{
-
-
-  $path = 'lasttoken.txt';
-
-  if(file_exists($path)) {
-
-    $file_cont = file_get_contents($path);
-
-  }
-  $token = $file_cont;
-  $envato->setAccessToken($file_cont );
-}
+//if( isset( $_SESSION['envato_token'] ) ){
+//  // -- if we have token
+//  $token = $_SESSION['envato_token'];
+//  $envato->setAccessToken( $_SESSION['envato_token'] );
+//
+//
+//  $myfile = fopen("lasttoken.txt", "w") or die("Unable to open file!");
+//  $txt = $_SESSION['envato_token'];
+//  fwrite($myfile, $txt);
+//  fclose($myfile);
+//
+//
+//}else{
+//
+//
+//  $path = 'lasttoken.txt';
+//
+//  if(file_exists($path)) {
+//
+//    $file_cont = file_get_contents($path);
+//
+//  }
+//  $token = $file_cont;
+//  $envato->setAccessToken($file_cont );
+//}
 
 // -- log out
 
@@ -185,6 +188,8 @@ if(isset($_GET['action']) && $_GET['action']=='show_files'){
 
 
 if($request!='version'){
+	// -- not version
+
 
   try {
 
@@ -253,6 +258,7 @@ if( !isset( $logged ) ){
 try {
 
   switch ($request){
+		// -- get version
     case "version":
 
       $req = 'v3/market/catalog/item-version?id='.$id_product;
