@@ -215,9 +215,6 @@ if(function_exists('print_rr')==false){
 
       /*
 
-
-
-
       <h3>Single item</h3>
       <p>Print details for a single specific item</p>
       <br />

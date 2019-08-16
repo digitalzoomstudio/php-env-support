@@ -68,6 +68,11 @@ $envato = new \Smafe\Envato( array(
 ) );
 
 
+$page_size = 3;
+
+if(isset($_GET['page_size'])){
+  $page_size = $_GET['page_size'];
+}
 
 // echo $file_cont;
 
@@ -280,7 +285,7 @@ try {
       break;
     case "comments":
 
-      $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=3&sort_by=newest' );
+      $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size='.$page_size.'&sort_by=newest' );
 
       if(isset($comments->Message)){
         $message = $comments->Message;
@@ -310,7 +315,7 @@ try {
       break;
   }
 
-  $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=3&sort_by=newest' );
+  $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size='.$page_size.'&sort_by=newest' );
 
   if($request=='version'){
 
