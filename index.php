@@ -21,7 +21,7 @@ if(function_exists('print_rr')==false){
   $fout.=print_r($arg,true);
   $fout.='</pre>';
   echo $fout;
-  
+
   }
 }
 
@@ -59,9 +59,13 @@ if(function_exists('print_rr')==false){
   *** Set Access Token if it exists
   **/
 
-  if( isset( $_SESSION['envato_token'] ) )
+  if( isset( $_SESSION['envato_token'] ) ){
     $envato->setAccessToken( $_SESSION['envato_token'] );
+  }else{
 
+
+    $envato->setAccessToken( $personal_api_key );
+  }
 
   /**
   *** Logout user
@@ -117,7 +121,7 @@ if(function_exists('print_rr')==false){
     <div class="container">
 
       <div class="page-header">
-        <h1>Envato PHP API Library</h1>
+        <h1>Envato Support</h1>
         <p class="lead">Simple PHP library to connect and communicate with the Envato API.</p>
       </div>
 
@@ -181,8 +185,8 @@ if(function_exists('print_rr')==false){
       ?>
       <?php endif; ?>
 
-        
-        
+
+
 <?php
         // try {
         //     $purchase = $envato->request( 'v3/market/buyer/list-purchases' );
@@ -191,10 +195,10 @@ if(function_exists('print_rr')==false){
         // } catch( \ErrorException $e ) {
         //     echo $e->getMessage();
         //   }
-                  
+
                    try {
              $comments = $envato->request( 'v1/discovery/search/search/comment?item_id='.$id_product.'&page_size=2&sort_by=newest' );
-             
+
             // echo '<pre>';
            print_rr( $comments );
             // echo '</pre>';
@@ -202,18 +206,18 @@ if(function_exists('print_rr')==false){
          } catch( \ErrorException $e ) {
             echo $e->getMessage();
            }
-           
-           
+
+
      ?>
       </div>
-      
+
       <?php
-      
+
       /*
-      
-      
-      
-      
+
+
+
+
       <h3>Single item</h3>
       <p>Print details for a single specific item</p>
       <br />
@@ -247,20 +251,20 @@ print_r( $item );
 
                 echo $e->getMessage();
 
-              } 
+              }
 
             ?></pre>
           </div>
         </div>
       </div>
-      
+
       <div>
-      
-      
-      
+
+
+
       */
-      
-      
+
+
       ?>
 
 <!--      <h3>All users purchases</h3>-->

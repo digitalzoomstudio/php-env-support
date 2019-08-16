@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9431f307-d3cf-455b-95b4-a9962e4e5337" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/6181433.txt" beforeDir="false" afterPath="$PROJECT_DIR$/6181433.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,87 +14,79 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-586881585">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="htaccess" value="1" />
-          <entry key="php" value="1" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PHP" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="htaccess" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="php" value="326" />
-          <entry key="txt" value="29" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="326" />
-          <entry key="PLAIN_TEXT" value="29" />
-        </counts>
-      </usages-collector>
-    </session>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="184" column="20" lean-forward="true" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+            <state relative-caret-position="3128">
+              <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state>
               <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class-api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="138" column="61" lean-forward="true" selection-start-line="138" selection-start-column="61" selection-end-line="138" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.editorconfig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state>
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="157782.txt" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/157782.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state>
               <caret line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6181433.txt" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6181433.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state>
               <caret column="9845" selection-start-column="9845" selection-end-column="9845" />
             </state>
           </provider>
@@ -110,6 +103,7 @@
       <find>json_</find>
       <find>version</find>
       <find>token</find>
+      <find>$personal_api_key</find>
     </findStrings>
     <replaceStrings>
       <replace>the item name !!!</replace>
@@ -132,19 +126,10 @@
         <option value="$PROJECT_DIR$/6181433.txt" />
         <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.editorconfig" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/.c9/metadata/workspace/my-app/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -153,10 +138,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="305" />
-    <option name="y" value="69" />
-    <option name="width" value="1510" />
-    <option name="height" value="1303" />
+    <option name="x" value="242" />
+    <option name="y" value="14" />
+    <option name="width" value="1583" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -172,7 +157,7 @@
           <expand>
             <path>
               <item name="php-env-support" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php-env-support" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php-env-support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,7 +166,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -215,6 +202,7 @@
       <workItem from="1537356323928" duration="1358000" />
       <workItem from="1537774894565" duration="1544000" />
       <workItem from="1537783267923" duration="245000" />
+      <workItem from="1565946182808" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="added unreal">
       <created>1537259606600</created>
@@ -234,40 +222,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4090000" />
+    <option name="totallyTimeSpent" value="4598000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="305" y="69" width="1510" height="1303" extended-state="0" />
+    <frame x="242" y="14" width="1583" height="994" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10490463" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32962137" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Structure" order="3" side_tool="true" visible="true" weight="0.16212533" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.16998342" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10111622" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32962137" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22996515" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32938388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="3" side_tool="true" visible="true" weight="0.15430072" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32938388" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added unreal" />
@@ -276,64 +261,57 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="156" column="13" lean-forward="true" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
+        <state relative-caret-position="3128">
+          <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/157782.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6181433.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret column="6826" lean-forward="true" selection-start-column="6826" selection-end-column="6826" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/157782.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6181433.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state>
           <caret column="9845" selection-start-column="9845" selection-end-column="9845" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="184" column="20" lean-forward="true" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state>
           <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class-api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="138" column="61" lean-forward="true" selection-start-line="138" selection-start-column="61" selection-end-line="138" selection-end-column="61" />
         </state>
       </provider>
     </entry>
